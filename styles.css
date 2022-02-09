@@ -14,6 +14,11 @@ header {
   justify-content: space-between;
   padding: 36px 24px;
   background-color: #fff;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
 }
 
 header .nav-brand {
@@ -28,11 +33,12 @@ section.headerline {
   background-image: url("./images/icons/header-shapes.svg");
   background-repeat: no-repeat;
   height: 68vh;
-  width: 89%;
+  width: 100%;
   padding: 14vh 24px 16px;
   overflow-x: hidden;
   background-color: #fff;
   border-bottom-left-radius: 64px;
+  background-size: contain;
 }
 
 .headerline h2.title {

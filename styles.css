@@ -39,6 +39,9 @@ section.headerline {
   background-color: #fff;
   border-bottom-left-radius: 64px;
   background-size: contain;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
 }
 
 .headerline h2.title {

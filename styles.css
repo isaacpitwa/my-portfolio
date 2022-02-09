@@ -1,60 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-*{
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  font-family: Poppins, sans-serif;
 }
+
 body {
-    background-color: #f4f4f4;
+  background-color: #f4f4f4;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 36px 24px;
-    background-color: #FFF;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 24px;
+  background-color: #fff;
 }
-header .nav-brand{
-    color: #6070FF;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: center;
+
+header .nav-brand {
+  color: #6070ff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
 }
-section.headerline{
-    background-image: url('./images/icons/header-shapes.svg');
-    background-repeat: no-repeat;
-    height: 68vh;
-    width: 89%;
-    padding: 14vh 24px 16px;
-    overflow-x: hidden;
-    background-color: #FFF;
-    border-bottom-left-radius: 64px;
+
+section.headerline {
+  background-image: url("./images/icons/header-shapes.svg");
+  background-repeat: no-repeat;
+  height: 68vh;
+  width: 89%;
+  padding: 14vh 24px 16px;
+  overflow-x: hidden;
+  background-color: #fff;
+  border-bottom-left-radius: 64px;
 }
+
 .headerline h2.title {
-    font-size: 40px;
-    line-height: 52px;
-    color: #172B4D;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
 }
+
 .headerline p {
-    color:#344563;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 16px 0;
-    font-weight: 400;
+  color: #344563;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 0;
+  font-weight: 400;
 }
-.headerline h2.label{
-    font-size: 16px;
-    line-height: 24px;
-    color: #7F8CFF;
-    font-weight: 400;
+
+.headerline h2.label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  font-weight: 400;
 }
-.socials{
-    display: flex;
-    list-style: none;
-    padding: 16px 0;
+
+.socials {
+  display: flex;
+  list-style: none;
+  padding: 16px 0;
 }
+
 .socials li {
-    padding-right: 20px ;
+  padding-right: 20px;
 }
-.socials li img :hover{
-    opacity: 0.5;
+
+.socials li img :hover {
+  opacity: 0.5;
 }

@@ -3,6 +3,15 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 36px;
+}
 header .nav-brand{
     color: #6070FF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
 }

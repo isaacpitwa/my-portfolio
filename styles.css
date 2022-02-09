@@ -17,13 +17,25 @@ header .nav-brand{
 }
 section.headerline{
     background-image: url('./images/icons/header-shapes.svg');
+    background-repeat: no-repeat;
     height: 90vh;
-    width: 100%;
-    padding: 42px 24px 16px;
+    width: 89%;
+    padding: 20vh 24px 16px;
+    overflow-x: hidden;
 }
-.headerline h2 {
+.headerline h2.title {
     font-size: 40px;
     line-height: 52px;
     color: #172B4D;
-    ;
+}
+.headerline p {
+    color:#344563;
+    font-size: 16px;
+    line-height: 24px;
+}
+.headerline h2.label{
+    font-size: 16px;
+    line-height: 24px;
+    color: #7F8CFF;
+    font-weight: 400;
 }

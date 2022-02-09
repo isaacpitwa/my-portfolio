@@ -6,7 +6,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding: 24px 36px;
+    padding: 36px 24px;
 }
 header .nav-brand{
     color: #6070FF;
@@ -14,4 +14,16 @@ header .nav-brand{
     font-weight: 700;
     line-height: 20px;
     text-align: center;
+}
+section.headerline{
+    background-image: url('./images/icons/header-shapes.svg');
+    height: 90vh;
+    width: 100%;
+    padding: 42px 24px 16px;
+}
+.headerline h2 {
+    font-size: 40px;
+    line-height: 52px;
+    color: #172B4D;
+    ;
 }

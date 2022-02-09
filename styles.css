@@ -18,9 +18,9 @@ header .nav-brand{
 section.headerline{
     background-image: url('./images/icons/header-shapes.svg');
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 68vh;
     width: 89%;
-    padding: 20vh 24px 16px;
+    padding: 16vh 24px 16px;
     overflow-x: hidden;
 }
 .headerline h2.title {
@@ -32,6 +32,7 @@ section.headerline{
     color:#344563;
     font-size: 16px;
     line-height: 24px;
+    padding: 16px 0;
 }
 .headerline h2.label{
     font-size: 16px;

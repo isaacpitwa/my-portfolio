@@ -20,7 +20,7 @@ section.headerline{
     background-repeat: no-repeat;
     height: 68vh;
     width: 89%;
-    padding: 16vh 24px 16px;
+    padding: 12vh 24px 16px;
     overflow-x: hidden;
 }
 .headerline h2.title {
@@ -33,6 +33,7 @@ section.headerline{
     font-size: 16px;
     line-height: 24px;
     padding: 16px 0;
+    font-weight: 400;
 }
 .headerline h2.label{
     font-size: 16px;

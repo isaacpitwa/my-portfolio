@@ -78,3 +78,8 @@ section.headerline {
 .socials li img :hover {
   opacity: 0.5;
 }
+
+/* Works section */
+.works {
+  display: grid;
+}

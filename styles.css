@@ -92,6 +92,9 @@ section.headerline {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  margin: 44px 0;
+  border-radius: 16px;
+  border: 1px solid #dfe1e6;
 }
 
 div.stats {

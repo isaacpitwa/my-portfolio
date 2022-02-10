@@ -113,6 +113,9 @@ section.headerline {
   color: #7a869a;
   font-weight: 400;
 }
+div.stats {
+  margin: 10px 0;
+}
 
 .work-card div.stats .dot {
   width: 10px;
@@ -122,9 +125,7 @@ section.headerline {
   margin: 4px 10px;
 }
 
-div.stats {
-  margin: 10px 0;
-}
+
 
 .project-title {
   color: #172b4d;

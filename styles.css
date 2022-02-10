@@ -44,13 +44,15 @@ section.headerline {
   flex-direction: column;
 }
 
-.headerline h2.title  , .about-me h2.title{
+.headerline h2.title,
+.about-me h2.title {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
 }
 
-.headerline p , .about-me p{
+.headerline p,
+.about-me p {
   color: #344563;
   font-size: 16px;
   line-height: 24px;
@@ -58,7 +60,8 @@ section.headerline {
   font-weight: 400;
 }
 
-.headerline h2.label,  .about-me h2.label {
+.headerline h2.label,
+.about-me h2.label {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;

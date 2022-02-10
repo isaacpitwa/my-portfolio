@@ -81,5 +81,90 @@ section.headerline {
 
 /* Works section */
 .works {
-  display: grid;
+  display: inline-grid;
+  justify-items: center;
+  padding: 54px 16px;
+  width: 100%;
+}
+
+.work-card {
+  padding: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card div.stats {
+  display: flex;
+  align-items: center;
+}
+
+.work-card .client,
+.work-card .year,
+.work-card .myrole {
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.work-card .year,
+.work-card .myrole {
+  color: #7a869a;
+  font-weight: 400;
+}
+
+.work-card div.stats .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c1c7d0;
+  margin: 4px 10px;
+}
+
+div.stats {
+  margin: 10px 0;
+}
+
+.project-title {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.work-card p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.work-card .content {
+  padding: 16px 0;
+}
+
+.work-card .languages {
+  display: flex;
+  margin: 12px 0;
+}
+
+.languages .lang {
+  background-color: #ebebff;
+  color: #6070ff;
+  padding: 4px 16px;
+  margin-right: 8px;
+  border-radius: 8px;
+}
+
+.work-card .details-btn {
+  background: #fff;
+  border: 1px solid #396df2;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 16px;
+  color: #396df2;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 12px 0;
 }

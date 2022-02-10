@@ -181,3 +181,37 @@ div.stats {
   width: 100%;
   border-top-right-radius: 64px;
 }
+
+.more {
+  padding:  24px 0;
+}
+.more ul {
+  list-style: none;
+  padding: 0;
+}
+.more .languages {
+  list-style: none;
+  padding: 0;
+}
+.more .languages .lang-wrapper {
+  background-color: #F7F7F9;
+  padding: 9px 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+.more .languages .lang-wrapper label {
+  margin-left: 16px;
+}
+
+.more .list-heading {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+.list-heading h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color:#000000;
+}

@@ -202,6 +202,7 @@ div.stats {
   display: flex;
   align-items: center;
   border-radius: 8px;
+  margin: 12px 0;
 }
 
 .more .languages .lang-wrapper label {
@@ -219,4 +220,6 @@ div.stats {
   font-size: 20px;
   line-height: 24px;
   color: #000;
+  font-weight: 400;
 }
+

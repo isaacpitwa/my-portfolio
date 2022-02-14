@@ -151,7 +151,6 @@ div.stats {
 }
 
 .work-card .languages {
-  display: flex;
   margin: 12px 0;
 }
 
@@ -161,6 +160,7 @@ div.stats {
   padding: 4px 16px;
   margin-right: 8px;
   border-radius: 8px;
+  float: left;
 }
 
 .details-btn {

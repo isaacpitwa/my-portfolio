@@ -242,7 +242,7 @@ section.contact-section {
 }
 
 section.contact-section .contact-container {
-  padding: 100px 24px;
+  padding: 100px 24px 50px 24px ;
   background-color: #6070ff;
   width: 100%;
   display: flex;
@@ -251,6 +251,7 @@ section.contact-section .contact-container {
   background-image: url("/images/bg-contact.svg");
   background-repeat: no-repeat;
   background-position: right;
+  background-size: contain;
   border-top-left-radius: 100px;
 }
 

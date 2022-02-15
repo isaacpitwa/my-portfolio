@@ -30,7 +30,7 @@ header .nav-brand {
 }
 
 section.headerline {
-  background-image: url("./images/icons/header-shapes.svg");
+  background-image: url("images/icons/header-shapes.svg");
   background-repeat: no-repeat;
   height: 68vh;
   width: 100%;
@@ -303,4 +303,9 @@ textarea {
   line-height: 24px;
   font-weight: 400;
   margin: 12px 0;
+}
+
+.submit-btn:hover {
+  color: #fff;
+  background-color: #6070ff;
 }

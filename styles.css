@@ -251,7 +251,6 @@ section.contact-section .contact-container {
   background-image: url("/images/bg-contact.svg");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
   border-top-left-radius: 100px;
 }
 

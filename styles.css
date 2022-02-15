@@ -235,10 +235,12 @@ ul,
   color: #000;
   font-weight: 400;
 }
+
 /* Contact Form styles */
-section.contact-section{
+section.contact-section {
   background-color: #fff;
 }
+
 section.contact-section .contact-container {
   padding: 100px 24px;
   background-color: #6070ff;
@@ -259,11 +261,13 @@ section.contact-section .contact-container {
   line-height: 54px;
   text-align: center;
 }
+
 .contact-section p {
   font-size: 21px;
-  color: #EBEBFF;
+  color: #ebebff;
   font-weight: 200;
   line-height: 28px;
+  margin: 0 18px;
   margin-top: 12px;
   text-align: center;
 }
@@ -272,7 +276,8 @@ section.contact-section .contact-container {
   margin-top: 48px;
 }
 
-.contact-section form  input,textarea {
+.contact-section form input,
+textarea {
   width: 92%;
   background-color: #fff;
   border-radius: 8px;
@@ -282,19 +287,20 @@ section.contact-section .contact-container {
   font-size: 17px;
   font-weight: 400;
   line-height: 20px;
-} 
+}
+
 textarea {
   min-height: 170px;
 }
 
 .contact-section form .submit-btn {
   background-color: #fff;
-  color: #6070FF;
-  padding: 12px 16px ;
+  color: #6070ff;
+  padding: 12px 16px;
   border-radius: 8px;
   border: 0;
   font-size: 17px;
   line-height: 24px;
-  font-weight:400;
+  font-weight: 400;
   margin: 12px 0;
 }

@@ -310,11 +310,12 @@ textarea {
   margin: 12px 0;
 }
 
-.geture-wrapper{
+.geture-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
+
 .geture-wrapper .container {
   height: 3px;
   width: 134px;

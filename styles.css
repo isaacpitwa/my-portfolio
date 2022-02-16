@@ -322,3 +322,26 @@ textarea {
   background-color: #000;
   border-radius: 50pc;
 }
+
+/* Desktop Styles */
+@media screen and (min-width: 992px), (max-width: 1100px) {
+  body{
+    overflow-x: hidden;
+  }
+  header{
+    width: unset;
+  }
+  section.headerline {
+    background-image: url("/images/header-bg.svg");
+    background-position: center;
+    width: unset;
+    padding-left: 15%;
+    padding-top: 12%;
+  }
+  section.headerline h2 {
+    width: 360px;
+  }
+  section.headerline  p {
+    width: 720px;
+  }
+}

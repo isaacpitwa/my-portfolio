@@ -374,4 +374,34 @@ textarea {
   section.headerline p {
     width: 720px;
   }
+
+  .works {
+    order: -1;
+  }
+
+  .work-card {
+    flex-direction: row;
+  }
+
+  .work-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .work-card .content {
+    padding: 18px;
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-me .desc {
+    width: 500px;
+  }
+  .about-me .more {
+    width: 500px;
+  }
 }

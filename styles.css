@@ -332,7 +332,7 @@ textarea {
 }
 
 /* Desktop Styles */
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) {
   body {
     overflow-x: hidden;
   }

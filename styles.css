@@ -394,6 +394,11 @@ textarea {
     padding: 18px;
   }
 
+  .work-card:hover{
+    border: 2px solid #A7AEFF;
+    cursor: pointer;
+  }
+
   .about-me {
     display: flex;
     padding-left: 100px;

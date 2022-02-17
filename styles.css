@@ -383,6 +383,7 @@ textarea {
 
   .work-card {
     flex-direction: row;
+    box-shadow: 0 0 50px #ccc;
   }
 
   .work-card:nth-child(even) {
@@ -395,17 +396,18 @@ textarea {
 
   .about-me {
     display: flex;
-    justify-content: space-around;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .about-me .desc {
     width: 500px;
+    margin-right: 100px;
   }
 
   .about-me .more {
     width: 500px;
+    margin-left: 100px;
   }
 
   .contact-section .contact-container {
@@ -421,5 +423,16 @@ textarea {
 
   .geture-wrapper {
     display: none;
+  }
+  
+  .more .languages{
+    display: flex;
+
+  }
+  .more .languages .lang-wrapper {
+    flex-direction: column;
+    width: 20%;
+    margin-right: 12px;
+    align-items: flex-start;
   }
 }

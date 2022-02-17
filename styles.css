@@ -365,7 +365,8 @@ textarea {
     background-position: center;
     width: unset;
     padding-left: 15%;
-    padding-top: 12%;
+    padding-top: 21%;
+    height: 80vh;
   }
 
   section.headerline h2 {

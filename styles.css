@@ -332,7 +332,7 @@ textarea {
 }
 
 /* Desktop Styles */
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
   body {
     overflow-x: hidden;
   }
@@ -402,15 +402,18 @@ textarea {
   .about-me .desc {
     width: 500px;
   }
+
   .about-me .more {
     width: 500px;
   }
+
   .contact-section .contact-container {
     align-items: center;
     background-image: url("/images/bg-contact-desktop.svg");
     background-position: center;
     background-size: contain;
   }
+
   .contact-container .contact-heading {
     max-width: 60%;
   }

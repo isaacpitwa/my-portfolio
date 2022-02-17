@@ -9,6 +9,10 @@ body {
   background-color: #f4f4f4;
 }
 
+.header-nav {
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -19,6 +23,10 @@ header {
 
 header a {
   text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
 }
 
 header .nav-brand {
@@ -98,6 +106,12 @@ section.headerline {
   margin: 44px 0;
   border-radius: 16px;
   border: 1px solid #dfe1e6;
+  transition: box-shadow 2s, transform 2s;
+}
+
+.work-card:hover {
+  transform: scale(0.8);
+  box-shadow: 0 0 50px #ccc;
 }
 
 div.stats {
@@ -173,10 +187,11 @@ div.stats {
   font-size: 17px;
   line-height: 24px;
   margin: 12px 0;
-  transition: 0.3s;
+  transition: all 0.5s ease-out;
 }
 
-.details-btn:hover {
+.details-btn:hover,
+.details-btn:focus {
   color: #fff;
   background-color: #6070ff;
 }
@@ -293,12 +308,7 @@ textarea {
   min-height: 170px;
 }
 
-.submit-btn:hover {
-  color: #fff;
-  background-color: #6070ff;
-}
-
-.contact-section form .submit-btn {
+.submit-btn {
   background-color: #fff;
   color: #6070ff;
   padding: 12px 16px;
@@ -308,6 +318,13 @@ textarea {
   line-height: 24px;
   font-weight: 400;
   margin: 12px 0;
+  transition: all 0.5s ease-out;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  color: #fff;
+  background-color: #6070ff;
 }
 
 .geture-wrapper {
@@ -321,4 +338,115 @@ textarea {
   width: 134px;
   background-color: #000;
   border-radius: 50pc;
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 84%;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: fixed;
+  }
+
+  header img {
+    display: none;
+  }
+
+  .header-nav {
+    display: unset;
+  }
+
+  .nav-item {
+    padding: 0 12px;
+  }
+
+  .nav-item a {
+    color: #344563;
+  }
+
+  section.headerline {
+    background-image: url("/images/header-bg.svg");
+    background-position: center;
+    width: unset;
+    padding-left: 15%;
+    padding-top: 21%;
+    height: 80vh;
+  }
+
+  section.headerline h2 {
+    width: 360px;
+  }
+
+  section.headerline p {
+    width: 720px;
+  }
+
+  .works {
+    order: -1;
+  }
+
+  .work-card {
+    flex-direction: row;
+    box-shadow: 0 0 50px #ccc;
+  }
+
+  .work-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .work-card .content {
+    padding: 18px;
+  }
+
+  .work-card:hover {
+    border: 2px solid #a7aeff;
+    cursor: pointer;
+  }
+
+  .about-me {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .about-me .desc {
+    width: 500px;
+    margin-right: 100px;
+  }
+
+  .about-me .more {
+    width: 500px;
+    margin-left: 100px;
+  }
+
+  .contact-section .contact-container {
+    align-items: center;
+    background-image: url("/images/bg-contact-desktop.svg");
+    background-position: center;
+    background-size: contain;
+  }
+
+  .contact-container .contact-heading {
+    max-width: 60%;
+  }
+
+  .geture-wrapper {
+    display: none;
+  }
+
+  .more .languages {
+    display: flex;
+  }
+
+  .more .languages .lang-wrapper {
+    flex-direction: column;
+    width: 20%;
+    margin-right: 12px;
+    align-items: flex-start;
+  }
 }

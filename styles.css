@@ -332,15 +332,16 @@ textarea {
 }
 
 /* Desktop Styles */
-@media screen and (min-width: 992px), (max-width: 1100px) {
+@media screen and (min-width: 992px){
   body {
     overflow-x: hidden;
   }
 
   header {
-    width: unset;
+    width: 84%;
     padding-left: 8%;
     padding-right: 8%;
+    position: fixed;
   }
 
   header img {
@@ -403,5 +404,18 @@ textarea {
   }
   .about-me .more {
     width: 500px;
+  }
+  .contact-section .contact-container {
+    align-items: center;
+    background-image: url("/images/bg-contact-desktop.svg");
+    background-position: center;
+    background-size: contain;
+  }
+  .contact-container .contact-heading {
+    max-width: 60%;
+  }
+
+  .geture-wrapper {
+    display: none;
   }
 }

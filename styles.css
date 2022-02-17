@@ -394,8 +394,8 @@ textarea {
     padding: 18px;
   }
 
-  .work-card:hover{
-    border: 2px solid #A7AEFF;
+  .work-card:hover {
+    border: 2px solid #a7aeff;
     cursor: pointer;
   }
 

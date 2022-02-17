@@ -424,11 +424,11 @@ textarea {
   .geture-wrapper {
     display: none;
   }
-  
-  .more .languages{
-    display: flex;
 
+  .more .languages {
+    display: flex;
   }
+
   .more .languages .lang-wrapper {
     flex-direction: column;
     width: 20%;

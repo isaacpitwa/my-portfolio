@@ -5,6 +5,9 @@
 > Portfolio is one of the most powerful tools in  software developer toolbox; it’s the easiest way of showing what you’re truly capable of as a developer, and is a quick and simple way for recruiters and hiring managers to get an idea of what you can bring to their teams.
  This project will include my projects both personal and microverse assigned projects.
 
+## Live preview
+
+Live preview [link](https://isaacpitwa.github.io/my-portfolio/)
 
 ## Built With
 

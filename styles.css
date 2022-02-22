@@ -53,8 +53,8 @@ section.headerline {
   flex-direction: column;
 }
 
-.headerline h2.title,
-.about-me h2.title {
+.headerline h1.title,
+.about-me h1.title {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;

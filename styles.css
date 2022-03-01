@@ -373,12 +373,25 @@ textarea {
   margin-bottom: 40px;
 }
 
+.close-wrapper {
+  padding: 16px 100px;
+}
+
 .toggle-menu img {
-  margin-left: 90%;
+  float: right;
 }
 
 header img:hover {
   cursor: pointer;
+}
+
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
 /* Desktop Styles */

@@ -118,27 +118,27 @@ div.stats {
   margin: 10px 0;
 }
 
-.work-card div.stats {
+div.stats {
   display: flex;
   align-items: center;
 }
 
-.work-card .client,
-.work-card .year,
-.work-card .myrole {
+ .client,
+ .year,
+ .myrole {
   color: #344563;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
 }
 
-.work-card .year,
-.work-card .myrole {
+ .year,
+ .myrole {
   color: #7a869a;
   font-weight: 400;
 }
 
-.work-card div.stats .dot {
+ div.stats .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -490,8 +490,17 @@ header img:hover {
     align-items: flex-start;
   }
   .project-details{
-    width: 100vw;
+    width: 92vw;
     height: 100vh;
     background-color: rgba(229, 229, 229,0.9);
+    z-index: 10;
+    position: absolute;
+    padding: 36px 48px;
+    padding-right: 100px;
+  }
+  .details-card {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
   }
 }

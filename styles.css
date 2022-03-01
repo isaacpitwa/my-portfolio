@@ -18,8 +18,7 @@ header {
   justify-content: space-between;
   padding: 36px 24px;
   background-color: #fff;
-
-  /* width: 100%; */
+  overflow-x: hidden;
 }
 
 header a {
@@ -375,8 +374,12 @@ textarea {
 }
 
 .toggle-menu img {
-  float: right;
+ margin-left: 90%;
 }
+header img:hover {
+  cursor: pointer;
+}
+
 
 /* Desktop Styles */
 @media (min-width: 992px) {

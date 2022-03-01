@@ -66,7 +66,7 @@ window.onload = (params) => {
   const workSection = document.getElementById('Portoflio');
   projects.forEach((project) => {
     const projectHTML = ` <div class="work-card">
-                                <img src="${project.featured_image}" alt="Tonic" />
+                                <img src="${project.featured_image}" alt="${project.name}" />
                                 <div class="content">
                                     <h2 class="project-title">${project.name}</h2>
                                     <div class="stats">

@@ -14,7 +14,7 @@ const projects = [
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-
+    live_link: 'https://github.com/isaacpitwa/my-portfolio',
   },
   {
     id: 2,
@@ -25,7 +25,8 @@ const projects = [
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-
+    live_link: 'https://github.com/isaacpitwa/my-portfolio',
+    github_link: 'https://github.com/isaacpitwa/my-portfolio',
   },
   {
     id: 3,

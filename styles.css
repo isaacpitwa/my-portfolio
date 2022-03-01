@@ -41,6 +41,7 @@ section.headerline {
   background-image: url("images/icons/header-shapes.svg");
   background-repeat: no-repeat;
   height: 68vh;
+
   /* width: 100%; */
   padding: 14vh 24px 16px;
   overflow-x: hidden;
@@ -95,6 +96,7 @@ section.headerline {
   display: inline-grid;
   justify-items: center;
   padding: 54px 16px;
+
   /* width: 100%; */
 }
 
@@ -116,29 +118,26 @@ section.headerline {
 
 div.stats {
   margin: 10px 0;
-}
-
-div.stats {
   display: flex;
   align-items: center;
 }
 
- .client,
- .year,
- .myrole {
+.client,
+.year,
+.myrole {
   color: #344563;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
 }
 
- .year,
- .myrole {
+.year,
+.myrole {
   color: #7a869a;
   font-weight: 400;
 }
 
- div.stats .dot {
+div.stats .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -164,7 +163,7 @@ div.stats {
   padding: 16px 0;
 }
 
-.work-card .languages {
+.languages {
   display: flex;
   margin: 12px 0;
 }
@@ -489,18 +488,62 @@ header img:hover {
     margin-right: 12px;
     align-items: flex-start;
   }
-  .project-details{
-    width: 92vw;
-    height: 100vh;
-    background-color: rgba(229, 229, 229,0.9);
-    z-index: 10;
-    position: absolute;
-    padding: 36px 48px;
-    padding-right: 100px;
-  }
-  .details-card {
-    background-color: #fff;
-    padding: 16px;
-    border-radius: 8px;
-  }
+}
+
+.project-details {
+  width: 92vw;
+  background-color: rgb(229 229 229 / 90%);
+  z-index: 10;
+  position: absolute;
+  padding: 36px 48px;
+  padding-right: 100px;
+}
+
+.details-card {
+  background-color: #fff;
+  padding: 16px;
+  padding-bottom: 36px;
+  border-radius: 8px;
+}
+
+.details-card .heading,
+.details-card .project-desc,
+.project-btns button {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.details-card .project-image {
+  width: 100%;
+}
+
+.details-card .project-desc .details-actions {
+  min-width: 35%;
+  padding: 4px 8px;
+}
+
+hr {
+  border: 1px solid #ebecf0;
+  margin: 8px 0;
+}
+
+.project-btns {
+  display: flex;
+}
+
+.project-btns button {
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  padding: 8px 18px;
+  color: #396df2;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: #fff;
+  margin-right: 18px;
+  align-items: center;
+}
+
+.project-btns button span {
+  margin-left: 14px;
 }

@@ -374,12 +374,12 @@ textarea {
 }
 
 .toggle-menu img {
- margin-left: 90%;
+  margin-left: 90%;
 }
+
 header img:hover {
   cursor: pointer;
 }
-
 
 /* Desktop Styles */
 @media (min-width: 992px) {

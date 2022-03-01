@@ -340,7 +340,7 @@ textarea {
   height: 3px;
   width: 134px;
   background-color: #000;
-  border-radius: 50pc;
+  border-radius: 50px;
 }
 
 .hidden {
@@ -388,8 +388,6 @@ textarea {
     width: unset;
     padding-left: 8%;
     padding-right: 8%;
-
-    /* position: fixed; */
   }
 
   header img {

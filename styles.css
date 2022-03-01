@@ -343,6 +343,41 @@ textarea {
   border-radius: 50pc;
 }
 
+.hidden {
+  display: none;
+}
+
+.toggle-menu {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(97 113 255 / 90%);
+  z-index: 10;
+  position: fixed;
+  padding: 62px 28px;
+}
+
+.remove-padding {
+  padding: 0;
+}
+
+.toggle-nav .nav-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+}
+
+.toggle-nav .nav-list .nav-item a {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.toggle-menu img {
+  float: right;
+}
+
 /* Desktop Styles */
 @media (min-width: 992px) {
   body {

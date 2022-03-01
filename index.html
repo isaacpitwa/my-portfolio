@@ -30,7 +30,17 @@
                 <li class="nav-item"><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <img src="images/icons/Union.svg" alt="Menu" />
+        <div id="toggle-menu" class="hidden">
+            <img src="images/icons/close.svg" alt="Close"  onclick="toggleMenu(this)"/>
+            <nav class="toggle-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Portoflio</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="images/icons/Union.svg" alt="Menu" onclick="toggleMenu(this)" />
     </header>
     <section class="headerline">
         <h1 class="title">I’m Isaac Pitwa Glad to see you!</h1>
@@ -227,7 +237,7 @@
         </div>
 
     </footer>
-
+    <script src="/index.js"></script>
 </body>
 
 </html>

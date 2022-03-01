@@ -18,8 +18,7 @@ header {
   justify-content: space-between;
   padding: 36px 24px;
   background-color: #fff;
-
-  /* width: 100%; */
+  overflow-x: hidden;
 }
 
 header a {
@@ -53,8 +52,8 @@ section.headerline {
   flex-direction: column;
 }
 
-.headerline h2.title,
-.about-me h2.title {
+.headerline h1.title,
+.about-me h1.title {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
@@ -340,7 +339,59 @@ textarea {
   height: 3px;
   width: 134px;
   background-color: #000;
-  border-radius: 50pc;
+  border-radius: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggle-menu {
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(97 113 255 / 90%);
+  z-index: 10;
+  position: fixed;
+  padding: 62px 28px;
+}
+
+.remove-padding {
+  padding: 0;
+}
+
+.toggle-nav .nav-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+}
+
+.toggle-nav .nav-list .nav-item a {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.close-wrapper {
+  padding: 16px 100px;
+}
+
+.toggle-menu img {
+  float: right;
+}
+
+header img:hover {
+  cursor: pointer;
+}
+
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 
 /* Desktop Styles */
@@ -353,8 +404,6 @@ textarea {
     width: unset;
     padding-left: 8%;
     padding-right: 8%;
-
-    /* position: fixed; */
   }
 
   header img {

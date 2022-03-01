@@ -24,12 +24,12 @@
             </ul>
         </nav>
         <div id="toggle-menu" class="hidden">
-            <img src="images/icons/close.svg" alt="Close"  onclick="toggleMenu(this)"/>
+            <img src="images/icons/close.svg" alt="Close"  onclick="toggleMenu()"/>
             <nav class="toggle-nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#">Portoflio</a></li>
-                    <li class="nav-item"><a href="#">About</a></li>
-                    <li class="nav-item"><a href="#">Contact</a></li>
+                    <li class="nav-item"><a href="#" onclick="mobileMenuOption(event,'Portoflio')">Portoflio</a></li>
+                    <li class="nav-item"><a href="#" onclick="mobileMenuOption(event,'About')">About</a></li>
+                    <li class="nav-item"><a href="#" onclick="mobileMenuOption(event,'Contact')">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,7 +55,7 @@
 
         </ul>
     </section>
-    <section class="works">
+    <section class="works" id="Portoflio">
         <div class="work-card">
             <img src="images/project1.svg" alt="Tonic" />
             <div class="content">
@@ -146,7 +146,7 @@
         </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="About">
         <div class="desc">
             <h2 class="title">About <br> Myself</h2>
             <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of
@@ -210,7 +210,7 @@
 
         </div>
     </section>
-    <footer class="contact-section">
+    <footer class="contact-section" id="Contact">
         <div class="contact-container">
             <div class="contact-heading">
                 <h2>Contact me</h2>

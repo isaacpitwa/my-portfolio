@@ -18,9 +18,9 @@ const projects = [
   },
   {
     id: 2,
-    name: 'Tonic',
+    name: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featured_image: 'images/project1.svg',
+    featured_image: 'images/project2.svg',
     technologies: ['html', 'css', 'javaScript'],
     client: 'CANOPY',
     role: 'Back End Dev',
@@ -31,7 +31,7 @@ const projects = [
     id: 3,
     name: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featured_image: 'images/project1.svg',
+    featured_image: 'images/project3.svg',
     technologies: ['html', 'css', 'javaScript'],
     client: 'CANOPY',
     role: 'Back End Dev',
@@ -40,9 +40,9 @@ const projects = [
   },
   {
     id: 4,
-    name: 'Tonic',
+    name: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featured_image: 'images/project1.svg',
+    featured_image: 'images/project4.svg',
     technologies: ['html', 'css', 'javaScript'],
     client: 'CANOPY',
     role: 'Back End Dev',
@@ -61,7 +61,8 @@ const projects = [
 
   },
 ];
-document.onload = (params) => {
+
+window.onload = (params) => {
   const workSection = document.getElementById('Portoflio');
   projects.forEach((project) => {
     const projectHTML = ` <div class="work-card">
@@ -77,7 +78,7 @@ document.onload = (params) => {
                                     </div>
                                     <p class="description">${project.description}</p>
                                     <ul class="languages">
-                                        ${project.technologies.map((tech) => `<li class="lang">${tech}</li>`)}
+                                        ${project.technologies.map((tech) => `<li class="lang">${tech}</li>`).join('')}
                                     </ul>
                                     <button class="details-btn" type="button">See Project</button>
                                 </div>

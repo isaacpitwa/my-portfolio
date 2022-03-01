@@ -41,7 +41,7 @@ section.headerline {
   background-image: url("images/icons/header-shapes.svg");
   background-repeat: no-repeat;
   height: 68vh;
-  width: 100%;
+  /* width: 100%; */
   padding: 14vh 24px 16px;
   overflow-x: hidden;
   background-color: #fff;
@@ -95,7 +95,7 @@ section.headerline {
   display: inline-grid;
   justify-items: center;
   padding: 54px 16px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .work-card {
@@ -488,5 +488,10 @@ header img:hover {
     width: 20%;
     margin-right: 12px;
     align-items: flex-start;
+  }
+  .project-details{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(229, 229, 229,0.9);
   }
 }

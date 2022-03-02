@@ -415,6 +415,7 @@ header img:hover {
 .details-card .project-desc {
   flex-direction: column;
 }
+
 hr {
   border: 1px solid #ebecf0;
   margin: 8px 0;
@@ -440,9 +441,11 @@ hr {
 .project-btns button span {
   margin-left: 14px;
 }
+
 .languages-extra {
   display: none;
 }
+
 /* Desktop Styles */
 @media (min-width: 992px) {
   body {
@@ -552,12 +555,15 @@ hr {
     margin-right: 12px;
     align-items: flex-start;
   }
-  .languages-extra{
+
+  .languages-extra {
     display: flex;
   }
-  .details-card .project-desc{
-flex-direction: row;
+
+  .details-card .project-desc {
+    flex-direction: row;
   }
+
   .details-card .project-desc .details-actions {
     min-width: 35%;
     padding: 4px 8px;

@@ -417,6 +417,7 @@ textarea {
   z-index: 10;
   position: absolute;
   padding: 36px 48px;
+  height: 100vh;
 }
 
 .details-card {
@@ -593,7 +594,10 @@ hr {
   .languages-extra {
     display: flex;
   }
-
+.project-details{
+  width: 94vw;
+  height: unset;
+}
   .details-card .project-desc {
     flex-direction: row;
   }

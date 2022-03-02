@@ -594,10 +594,12 @@ hr {
   .languages-extra {
     display: flex;
   }
-.project-details{
-  width: 94vw;
-  height: unset;
-}
+
+  .project-details {
+    width: 94vw;
+    height: unset;
+  }
+
   .details-card .project-desc {
     flex-direction: row;
   }

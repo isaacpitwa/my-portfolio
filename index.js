@@ -122,7 +122,7 @@ function showProject(id) {
           <img src="images/icons/close_gray.svg" alt="Close" onclick="closeProjectDetails()" />
 
       </div>
-      <img src="${project.featured_image}" alt="${project.name}" class="project-image"  height="450"/>
+      <img src="${project.featured_image}" alt="${project.name}" class="project-image"z/>
       <div class="project-desc">
           <p>${project.description}</p>
           <div class="details-actions">

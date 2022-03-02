@@ -137,7 +137,7 @@ function showProject(id) {
               <hr/>
               <div class="project-btns">
                   <a href="${project.live_link}" target="_blank"><button type="button" >See live <span><img src="images/icons/external_link.svg" alt="See Live"><img src="images/icons/external_link_white.svg" alt="See Live"></span></button></a>
-                  <a href="${project.github_link}"><button type="button" >See  Source <span><img src="images/icons/github_link.svg" alt="See Source"><img src="images/icons/github_link_white.svg" alt="See Source"></span></button></a>
+                  <a href="${project.github_link}" target="_blank"><button type="button" >See  Source <span><img src="images/icons/github_link.svg" alt="See Source"><img src="images/icons/github_link_white.svg" alt="See Source"></span></button></a>
               </div>
           </div>
       </div>

@@ -14,7 +14,7 @@ const projects = [
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-    live_link: 'https://github.com/isaacpitwa/my-portfolio',
+    live_link: 'https://isaacpitwa.github.io/my-portfolio/',
     github_link: 'https://github.com/isaacpitwa/my-portfolio',
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-    live_link: 'https://github.com/isaacpitwa/my-portfolio',
+    live_link: 'https://isaacpitwa.github.io/my-portfolio/',
     github_link: 'https://github.com/isaacpitwa/my-portfolio',
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-    live_link: 'https://github.com/isaacpitwa/my-portfolio',
+    live_link: 'https://isaacpitwa.github.io/my-portfolio/',
     github_link: 'https://github.com/isaacpitwa/my-portfolio',
   },
   {
@@ -50,7 +50,7 @@ const projects = [
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-    live_link: 'https://github.com/isaacpitwa/my-portfolio',
+    live_link: 'https://isaacpitwa.github.io/my-portfolio/',
     github_link: 'https://github.com/isaacpitwa/my-portfolio',
   },
   {
@@ -62,7 +62,7 @@ const projects = [
     client: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-    live_link: 'https://github.com/isaacpitwa/my-portfolio',
+    live_link: 'https://isaacpitwa.github.io/my-portfolio/',
     github_link: 'https://github.com/isaacpitwa/my-portfolio',
   },
 ];
@@ -136,8 +136,8 @@ function showProject(id) {
               </ul>
               <hr/>
               <div class="project-btns">
-                  <button type="button" >See live <span><img src="images/icons/external_link.svg" alt="See Live"><img src="images/icons/external_link_white.svg" alt="See Live"></span></button>
-                  <button type="button" >See  Source <span><img src="images/icons/github_link.svg" alt="See Source"><img src="images/icons/github_link_white.svg" alt="See Source"></span></button>
+                  <a href="${project.live_link}" target="_blank"><button type="button" >See live <span><img src="images/icons/external_link.svg" alt="See Live"><img src="images/icons/external_link_white.svg" alt="See Live"></span></button></a>
+                  <a href="${project.github_link}"><button type="button" >See  Source <span><img src="images/icons/github_link.svg" alt="See Source"><img src="images/icons/github_link_white.svg" alt="See Source"></span></button></a>
               </div>
           </div>
       </div>

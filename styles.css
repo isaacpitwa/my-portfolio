@@ -391,6 +391,10 @@ textarea {
   padding: 0;
 }
 
+.project-btns a {
+  text-decoration: none;
+}
+
 .toggle-nav .nav-list {
   display: flex;
   flex-direction: column;
@@ -447,11 +451,19 @@ hr {
   margin: 8px 0;
 }
 
-.project-btns button span {
+.project-btns a button span {
   margin-left: 14px;
 }
 
-.project-btns button span img:last-child {
+.project-btns a button span img:last-child {
+  display: none;
+}
+
+.project-btns button:hover span img:last-child {
+  display: block;
+}
+
+.project-btns button:hover span img:first-child {
   display: none;
 }
 

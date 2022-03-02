@@ -189,8 +189,37 @@ div.stats .dot {
   transition: all 0.5s ease-out;
 }
 
+.project-btns button {
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  padding: 8px 18px;
+  color: #396df2;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: #fff;
+  margin-right: 18px;
+  align-items: center;
+}
+
+.toggle-menu img {
+  float: right;
+}
+
+.project-btns,
+.project-btns button {
+  display: flex;
+}
+
+header img:hover,
+.project-details .heading img,
+.project-btns button {
+  cursor: pointer;
+}
+
 .details-btn:hover,
-.details-btn:focus ,.project-btns button:hover,.project-btns button:focus{
+.details-btn:focus,
+.project-btns button:hover,
+.project-btns button:focus {
   color: #fff;
   background-color: #6070ff;
   opacity: 0.7;
@@ -379,15 +408,6 @@ textarea {
   padding: 16px 65px;
 }
 
-.toggle-menu img {
-  float: right;
-}
-
-header img:hover,
-.project-details .heading img, button {
-  cursor: pointer;
-}
-
 .project-details {
   background-color: rgb(229 229 229 / 90%);
   z-index: 10;
@@ -427,27 +447,11 @@ hr {
   margin: 8px 0;
 }
 
-.project-btns,
-.project-btns button {
-  display: flex;
-}
-
-.project-btns button {
-  border: 1px solid #396df2;
-  border-radius: 8px;
-  padding: 8px 18px;
-  color: #396df2;
-  font-size: 15px;
-  line-height: 20px;
-  background-color: #fff;
-  margin-right: 18px;
-  align-items: center;
-}
-
 .project-btns button span {
   margin-left: 14px;
 }
-.project-btns button span img:last-child{
+
+.project-btns button span img:last-child {
   display: none;
 }
 
@@ -463,12 +467,6 @@ hr {
   clear: both;
   height: 0;
 }
-.project-btns button:hover span img:last-child,.project-btns button:focus span img:last-child{
-display: block;
-}
-.project-btns button:hover span img:first-child,.project-btns button:focus span img:first-child{
-  display: none;
-  }
 
 /* Desktop Styles */
 @media (min-width: 992px) {

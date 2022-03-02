@@ -158,14 +158,10 @@ function closeProjectDetails() {
 
 // Validate Contact Form Scripts
 const contactForm = document.querySelector('#contact-form');
-const NAME_REQUIRED = 'Please enter your name';
-const EMAIL_REQUIRED = 'Please enter your email';
-const EMAIL_INVALID_CASE = 'Please enter a correct email address format';
-const MESSAGE_REQUIRED = 'Please enter Message';
+const EMAIL_INVALID_CASE = 'Please enter email in  Lower  case';
 const errorElement = document.getElementById('error-message');
 // show a message with a type of the input
 function showMessage(input, message, type) {
-  // get the <small> element and set the message
   errorElement.innerText += message;
   // update the class for the input
   input.className = type ? 'success' : 'error';
@@ -178,18 +174,8 @@ function showError(input, message) {
 function showSuccess(input) {
   return showMessage(input, '', true);
 }
-function hasValue(input, message) {
-  if (input.value.trim() === '') {
-    return showError(input, message);
-  }
-  return showSuccess(input);
-}
-function validateEmailCase(input, requiredMsg, invalidMsg) {
-  // check if the value is not empty
-  if (!hasValue(input, requiredMsg)) {
-    return false;
-  }
-  // validate email format
+
+function validateEmailCase(input, invalidMsg) {
   const email = input.value.trim();
   if (email !== email.toLowerCase()) {
     return showError(input, invalidMsg);
@@ -202,12 +188,8 @@ contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
   errorElement.innerText = '';
   // validate the form
-  const nameValid = hasValue(contactForm.elements.name, NAME_REQUIRED);
-  const emailValid = validateEmailCase(contactForm.elements.email,
-    EMAIL_REQUIRED, EMAIL_INVALID_CASE);
-  const messageValid = hasValue(contactForm.elements.message, MESSAGE_REQUIRED);
-  // if valid, submit the form.
-  if (nameValid && emailValid && messageValid) {
+  const emailValid = validateEmailCase(contactForm.elements.email, EMAIL_INVALID_CASE);
+  if (emailValid) {
     document.forms[0].submit();
   }
 });

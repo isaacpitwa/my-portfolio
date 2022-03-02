@@ -41,8 +41,7 @@ section.headerline {
   background-image: url("images/icons/header-shapes.svg");
   background-repeat: no-repeat;
   height: 68vh;
-
-  /* width: 100%; */
+  width: 100%;
   padding: 14vh 24px 16px;
   overflow-x: hidden;
   background-color: #fff;
@@ -96,8 +95,7 @@ section.headerline {
   display: inline-grid;
   justify-items: center;
   padding: 54px 16px;
-
-  /* width: 100%; */
+  width: 100%;
 }
 
 .work-card {
@@ -118,26 +116,29 @@ section.headerline {
 
 div.stats {
   margin: 10px 0;
+}
+
+.work-card div.stats {
   display: flex;
   align-items: center;
 }
 
-.client,
-.year,
-.myrole {
+.work-card .client,
+.work-card .year,
+.work-card .myrole {
   color: #344563;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
 }
 
-.year,
-.myrole {
+.work-card .year,
+.work-card .myrole {
   color: #7a869a;
   font-weight: 400;
 }
 
-div.stats .dot {
+.work-card div.stats .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -163,7 +164,7 @@ div.stats .dot {
   padding: 16px 0;
 }
 
-.languages {
+.work-card .languages {
   display: flex;
   margin: 12px 0;
 }
@@ -189,41 +190,10 @@ div.stats .dot {
   transition: all 0.5s ease-out;
 }
 
-.project-btns button {
-  border: 1px solid #396df2;
-  border-radius: 8px;
-  padding: 8px 18px;
-  color: #396df2;
-  font-size: 15px;
-  line-height: 20px;
-  background-color: #fff;
-  margin-right: 18px;
-  align-items: center;
-  white-space: nowrap;
-}
-
-.toggle-menu img {
-  float: right;
-}
-
-.project-btns,
-.project-btns button {
-  display: flex;
-}
-
-header img:hover,
-.project-details .heading img,
-.project-btns button {
-  cursor: pointer;
-}
-
 .details-btn:hover,
-.details-btn:focus,
-.project-btns button:hover,
-.project-btns button:focus {
+.details-btn:focus {
   color: #fff;
   background-color: #6070ff;
-  opacity: 0.7;
 }
 
 .about-me {
@@ -247,7 +217,6 @@ ul,
 .more .languages {
   list-style: none;
   padding: 0;
-  flex-wrap: wrap;
 }
 
 .more .languages .lang-wrapper {
@@ -256,8 +225,7 @@ ul,
   display: flex;
   align-items: center;
   border-radius: 8px;
-  margin: 12px 4px;
-  flex-wrap: wrap;
+  margin: 12px 0;
 }
 
 .more .languages .lang-wrapper label {
@@ -392,10 +360,6 @@ textarea {
   padding: 0;
 }
 
-.project-btns a {
-  text-decoration: none;
-}
-
 .toggle-nav .nav-list {
   display: flex;
   flex-direction: column;
@@ -410,73 +374,15 @@ textarea {
 }
 
 .close-wrapper {
-  padding: 16px 65px;
+  padding: 16px 100px;
 }
 
-.project-details {
-  background-color: rgb(229 229 229 / 90%);
-  z-index: 10;
-  position: fixed;
-  padding: 32px 10px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+.toggle-menu img {
+  float: right;
 }
 
-.details-card {
-  background-color: #fff;
-  padding: 8px;
-  padding-bottom: 16px;
-  border-radius: 8px;
-}
-
-.details-card .heading,
-.details-card .project-desc {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.details-card .project-image {
-  width: 100%;
-}
-
-.details-card .project-desc .details-actions {
-  min-width: 10%;
-  padding: 4px;
-}
-
-.details-card .project-desc {
-  flex-direction: column;
-}
-
-hr {
-  border: 1px solid #ebecf0;
-  margin: 8px 0;
-}
-
-.details-actions hr {
-  margin: 24px 0;
-}
-
-.project-btns a button span {
-  margin-left: 14px;
-}
-
-.project-btns a button span img:last-child {
-  display: none;
-}
-
-.project-btns button:hover span img:last-child {
-  display: block;
-}
-
-.project-btns button:hover span img:first-child {
-  display: none;
-}
-
-.languages-extra {
-  display: none;
+header img:hover {
+  cursor: pointer;
 }
 
 .clearfix::after {
@@ -486,10 +392,6 @@ hr {
   content: " ";
   clear: both;
   height: 0;
-}
-
-.project-details .details-card {
-  height: fit-content;
 }
 
 /* Desktop Styles */
@@ -539,7 +441,6 @@ hr {
 
   .works {
     order: -1;
-    width: 100%;
   }
 
   .work-card {
@@ -600,33 +501,5 @@ hr {
     width: 20%;
     margin-right: 12px;
     align-items: flex-start;
-  }
-
-  .languages-extra {
-    display: flex;
-  }
-
-  .details-card {
-    padding: 16px;
-    height: fit-content;
-  }
-
-  .details-card .project-desc {
-    flex-direction: row;
-  }
-
-  .details-card .project-desc .details-actions {
-    min-width: 35%;
-    padding: 4px 8px;
-  }
-
-  .project-details {
-    width: 100%;
-    height: 100vh;
-    padding: 16px 36px;
-  }
-
-  .project-details .project-image {
-    height: 450px;
   }
 }

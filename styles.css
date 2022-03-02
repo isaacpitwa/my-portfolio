@@ -416,7 +416,7 @@ textarea {
   background-color: rgb(229 229 229 / 90%);
   z-index: 10;
   position: absolute;
-  padding: 36px 36px;
+  padding: 36px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -609,6 +609,5 @@ hr {
   .project-details {
     width: 94%;
     height: unset;
-
   }
 }

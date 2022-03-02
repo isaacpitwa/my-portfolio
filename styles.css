@@ -375,7 +375,7 @@ textarea {
 }
 
 .close-wrapper {
-  padding: 16px 100px;
+  padding: 16px 65px;
 }
 
 .toggle-menu img {
@@ -448,6 +448,8 @@ hr {
 
 .languages-extra {
   display: none;
+}
+
 .clearfix::after {
   visibility: hidden;
   display: block;

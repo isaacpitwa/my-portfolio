@@ -595,11 +595,6 @@ hr {
     display: flex;
   }
 
-  .project-details {
-    width: 94vw;
-    height: unset;
-  }
-
   .details-card .project-desc {
     flex-direction: row;
   }
@@ -607,5 +602,10 @@ hr {
   .details-card .project-desc .details-actions {
     min-width: 35%;
     padding: 4px 8px;
+  }
+
+  .project-details {
+    width: 94vw;
+    height: unset;
   }
 }

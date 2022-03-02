@@ -57,6 +57,43 @@
         </ul>
     </section>
     <section class="works" id="Portoflio"></section>
+    <section class="project-details">
+  <div class="details-card">
+      <div class="heading">
+          <div>
+              <h2 class="project-title">${project.name}</h2>
+              <div class="stats">
+                  <h3 class="client">${project.client}</h3>
+                  <div class="dot"></div>
+                  <h3 class="myrole">${project.role}</h3>
+                  <div class="dot"></div>
+                  <h3 class="year">${project.year}</h3>
+              </div>
+          </div>
+          <img src="images/icons/close_gray.svg" alt="Close" onclick="closeProjectDetails()" />
+
+      </div>
+      <img src="${project.featured_image}" alt="${project.name}" class="project-image"z/>
+      <div class="project-desc">
+          <p>${project.description}</p>
+          <div class="details-actions">
+              <ul class="languages">
+              ${project.technologies.map((tech) => `<li class="lang">${tech}</li>`).join('')}
+              </ul>
+              <ul class="languages languages-extra">
+                  <li class="lang">github</li>
+                  <li class="lang">ruby</li>
+                  <li class="lang">Bootstrap</li>
+              </ul>
+              <hr/>
+              <div class="project-btns">
+                  <a href="${project.live_link}" target="_blank"><button type="button" >See live <span><img src="images/icons/external_link.svg" alt="See Live"><img src="images/icons/external_link_white.svg" alt="See Live"></span></button></a>
+                  <a href="${project.github_link}" target="_blank"><button type="button" >See  Source <span><img src="images/icons/github_link.svg" alt="See Source"><img src="images/icons/github_link_white.svg" alt="See Source"></span></button></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
     <section class="about-me" id="About">
         <div class="desc">
             <h2 class="title">About <br> Myself</h2>

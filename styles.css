@@ -415,12 +415,11 @@ textarea {
 .project-details {
   background-color: rgb(229 229 229 / 90%);
   z-index: 10;
-  position: absolute;
+  position: fixed;
   padding: 36px;
   height: 94vh;
   display: flex;
   justify-content: center;
-  position: fixed;
 }
 
 .details-card {
@@ -610,6 +609,5 @@ hr {
   .project-details {
     width: 94%;
     height: 94vh;
-    
   }
 }

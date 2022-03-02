@@ -216,6 +216,7 @@ ul,
 .more .languages {
   list-style: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .more .languages .lang-wrapper {
@@ -224,7 +225,8 @@ ul,
   display: flex;
   align-items: center;
   border-radius: 8px;
-  margin: 12px 0;
+  margin: 12px 4px;
+  flex-wrap: wrap;
 }
 
 .more .languages .lang-wrapper label {
@@ -380,6 +382,67 @@ header img:hover {
   cursor: pointer;
 }
 
+.project-details {
+  background-color: rgb(229 229 229 / 90%);
+  z-index: 10;
+  position: absolute;
+  padding: 36px 48px;
+}
+
+.details-card {
+  background-color: #fff;
+  padding: 16px;
+  padding-bottom: 36px;
+  border-radius: 8px;
+}
+
+.details-card .heading,
+.details-card .project-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.details-card .project-image {
+  width: 100%;
+}
+
+.details-card .project-desc .details-actions {
+  min-width: 100%;
+  padding: 4px 8px;
+}
+
+.details-card .project-desc {
+  flex-direction: column;
+}
+hr {
+  border: 1px solid #ebecf0;
+  margin: 8px 0;
+}
+
+.project-btns,
+.project-btns button {
+  display: flex;
+}
+
+.project-btns button {
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  padding: 8px 18px;
+  color: #396df2;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: #fff;
+  margin-right: 18px;
+  align-items: center;
+}
+
+.project-btns button span {
+  margin-left: 14px;
+}
+.languages-extra {
+  display: none;
+}
 /* Desktop Styles */
 @media (min-width: 992px) {
   body {
@@ -427,6 +490,7 @@ header img:hover {
 
   .works {
     order: -1;
+    width: 100%;
   }
 
   .work-card {
@@ -488,62 +552,14 @@ header img:hover {
     margin-right: 12px;
     align-items: flex-start;
   }
-}
-
-.project-details {
-  width: 92vw;
-  background-color: rgb(229 229 229 / 90%);
-  z-index: 10;
-  position: absolute;
-  padding: 36px 48px;
-  padding-right: 100px;
-}
-
-.details-card {
-  background-color: #fff;
-  padding: 16px;
-  padding-bottom: 36px;
-  border-radius: 8px;
-}
-
-.details-card .heading,
-.details-card .project-desc,
-.project-btns button {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.details-card .project-image {
-  width: 100%;
-}
-
-.details-card .project-desc .details-actions {
-  min-width: 35%;
-  padding: 4px 8px;
-}
-
-hr {
-  border: 1px solid #ebecf0;
-  margin: 8px 0;
-}
-
-.project-btns {
-  display: flex;
-}
-
-.project-btns button {
-  border: 1px solid #396df2;
-  border-radius: 8px;
-  padding: 8px 18px;
-  color: #396df2;
-  font-size: 15px;
-  line-height: 20px;
-  background-color: #fff;
-  margin-right: 18px;
-  align-items: center;
-}
-
-.project-btns button span {
-  margin-left: 14px;
+  .languages-extra{
+    display: flex;
+  }
+  .details-card .project-desc{
+flex-direction: row;
+  }
+  .details-card .project-desc .details-actions {
+    min-width: 35%;
+    padding: 4px 8px;
+  }
 }

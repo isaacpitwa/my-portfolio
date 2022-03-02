@@ -92,6 +92,7 @@ window.onload = (params) => {
   });
 };
 
+// Toggles Mobile Menu
 function toggleMenu() {
   document.getElementById('toggle-menu').classList.toggle('toggle-menu');
   document.querySelector('header').classList.toggle('remove-padding');
@@ -102,6 +103,7 @@ function mobileMenuOption(event, id) {
   const linkTo = document.getElementById(id);
   linkTo.scrollIntoView();
 }
+// Shows project details popup
 function showProject(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   const body = document.querySelector('body');
@@ -153,3 +155,59 @@ function closeProjectDetails() {
     element.parentNode.removeChild(element);
   }
 }
+
+// Validate Contact Form Scripts
+const contactForm = document.querySelector('#contact-form');
+const NAME_REQUIRED = 'Please enter your name';
+const EMAIL_REQUIRED = 'Please enter your email';
+const EMAIL_INVALID_CASE = 'Please enter a correct email address format';
+const MESSAGE_REQUIRED = 'Please enter Message';
+const errorElement = document.getElementById('error-message');
+// show a message with a type of the input
+function showMessage(input, message, type) {
+  // get the <small> element and set the message
+  errorElement.innerText += message;
+  // update the class for the input
+  input.className = type ? 'success' : 'error';
+  return type;
+}
+function showError(input, message) {
+  return showMessage(input, message, false);
+}
+
+function showSuccess(input) {
+  return showMessage(input, '', true);
+}
+function hasValue(input, message) {
+  if (input.value.trim() === '') {
+    return showError(input, message);
+  }
+  return showSuccess(input);
+}
+function validateEmailCase(input, requiredMsg, invalidMsg) {
+  // check if the value is not empty
+  if (!hasValue(input, requiredMsg)) {
+    return false;
+  }
+  // validate email format
+  const email = input.value.trim();
+  if (email !== email.toLowerCase()) {
+    return showError(input, invalidMsg);
+  }
+  return true;
+}
+
+contactForm.addEventListener('submit', (event) => {
+  // stop form submission
+  event.preventDefault();
+  errorElement.innerText = '';
+  // validate the form
+  const nameValid = hasValue(contactForm.elements.name, NAME_REQUIRED);
+  const emailValid = validateEmailCase(contactForm.elements.email,
+    EMAIL_REQUIRED, EMAIL_INVALID_CASE);
+  const messageValid = hasValue(contactForm.elements.message, MESSAGE_REQUIRED);
+  // if valid, submit the form.
+  if (nameValid && emailValid && messageValid) {
+    alert('Demo only. No form was posted.');
+  }
+});

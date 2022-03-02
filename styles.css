@@ -353,10 +353,10 @@ textarea {
   font-weight: 400;
   margin: 12px 0;
   transition: all 0.5s ease-out;
+  width: 140px;
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
+.submit-btn:hover {
   color: #fff;
   background-color: #6070ff;
 }
@@ -490,6 +490,30 @@ hr {
 
 .project-details .details-card {
   height: fit-content;
+}
+
+input.success,
+textarea.success {
+  border: 1px solid green !important;
+}
+
+input.error,
+textarea.error {
+  border: 1px solid red !important;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+em {
+  color: #d82148;
+  text-shadow: none;
+  margin: 8px 0;
 }
 
 /* Desktop Styles */
@@ -628,5 +652,9 @@ hr {
 
   .project-details .project-image {
     height: 450px;
+  }
+
+  .contact-form {
+    width: 60%;
   }
 }

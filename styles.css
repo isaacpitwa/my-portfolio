@@ -601,6 +601,7 @@ hr {
   .languages-extra {
     display: flex;
   }
+
   .details-card {
     padding: 16px;
     height: fit-content;
@@ -618,7 +619,7 @@ hr {
   .project-details {
     width: 100%;
     height: 100vh;
-    padding:  16px 36px;
+    padding: 16px 36px;
   }
 
   .project-details .project-image {

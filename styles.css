@@ -417,15 +417,16 @@ textarea {
   z-index: 10;
   position: absolute;
   padding: 36px;
-  height: 100vh;
+  height: 94vh;
   display: flex;
   justify-content: center;
+  position: fixed;
 }
 
 .details-card {
   background-color: #fff;
   padding: 16px;
-  padding-bottom: 36px;
+  padding-bottom: 16px;
   border-radius: 8px;
 }
 
@@ -608,6 +609,7 @@ hr {
 
   .project-details {
     width: 94%;
-    height: unset;
+    height: 94vh;
+    
   }
 }

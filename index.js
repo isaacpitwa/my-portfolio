@@ -208,6 +208,6 @@ contactForm.addEventListener('submit', (event) => {
   const messageValid = hasValue(contactForm.elements.message, MESSAGE_REQUIRED);
   // if valid, submit the form.
   if (nameValid && emailValid && messageValid) {
-    alert('Demo only. No form was posted.');
+    document.forms[0].submit();
   }
 });

@@ -454,6 +454,9 @@ hr {
   border: 1px solid #ebecf0;
   margin: 8px 0;
 }
+.details-actions hr{
+  margin: 24px 0;
+}
 
 .project-btns a button span {
   margin-left: 14px;

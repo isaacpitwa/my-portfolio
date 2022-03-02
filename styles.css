@@ -190,9 +190,10 @@ div.stats .dot {
 }
 
 .details-btn:hover,
-.details-btn:focus {
+.details-btn:focus ,.project-btns button:hover,.project-btns button:focus{
   color: #fff;
   background-color: #6070ff;
+  opacity: 0.7;
 }
 
 .about-me {
@@ -382,7 +383,8 @@ textarea {
   float: right;
 }
 
-header img:hover {
+header img:hover,
+.project-details .heading img, button {
   cursor: pointer;
 }
 
@@ -445,6 +447,9 @@ hr {
 .project-btns button span {
   margin-left: 14px;
 }
+.project-btns button span img:last-child{
+  display: none;
+}
 
 .languages-extra {
   display: none;
@@ -458,6 +463,12 @@ hr {
   clear: both;
   height: 0;
 }
+.project-btns button:hover span img:last-child,.project-btns button:focus span img:last-child{
+display: block;
+}
+.project-btns button:hover span img:first-child,.project-btns button:focus span img:first-child{
+  display: none;
+  }
 
 /* Desktop Styles */
 @media (min-width: 992px) {

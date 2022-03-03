@@ -203,5 +203,4 @@ const handleValueChange = (event) => {
   const formData = JSON.parse(localStorage.getItem('formData')) || {};
   formData[event.name] = event.value;
   localStorage.setItem('formData', JSON.stringify(formData));
-  console.log(formData);
 };

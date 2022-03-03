@@ -3,7 +3,9 @@ window.dataLayer = window.dataLayer || [];
 function gtag(...args) { window.dataLayer.push(args); }
 gtag('js', new Date());
 gtag('config', 'G-ES0LN8KC8W');
-
+const contactForm = document.querySelector('#contact-form');
+const EMAIL_INVALID_CASE = 'Please enter email in  Lower  case';
+const errorElement = document.getElementById('error-message');
 const projects = [
   {
     id: 1,
@@ -68,6 +70,12 @@ const projects = [
 ];
 
 window.onload = (params) => {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  if (formData) {
+    contactForm.elements.name.value = formData.name;
+    contactForm.elements.email.value = formData.email;
+    contactForm.elements.message.value = formData.message;
+  }
   const workSection = document.getElementById('Portoflio');
   projects.forEach((project) => {
     const projectHTML = ` <div class="work-card"  id="${project.id}">
@@ -157,9 +165,7 @@ function closeProjectDetails() {
 }
 
 // Validate Contact Form Scripts
-const contactForm = document.querySelector('#contact-form');
-const EMAIL_INVALID_CASE = 'Please enter email in  Lower  case';
-const errorElement = document.getElementById('error-message');
+
 // show a message with a type of the input
 function showMessage(input, message, type) {
   errorElement.innerText += message;
@@ -193,3 +199,9 @@ contactForm.addEventListener('submit', (event) => {
     document.forms[0].submit();
   }
 });
+const handleValueChange = (event) => {
+  const formData = JSON.parse(localStorage.getItem('formData')) || {};
+  formData[event.name] = event.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+  console.log(formData);
+};

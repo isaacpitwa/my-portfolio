@@ -199,6 +199,9 @@ contactForm.addEventListener('submit', (event) => {
     document.forms[0].submit();
   }
 });
+
+// Handle the change of local storage
+
 const handleValueChange = (event) => {
   const formData = JSON.parse(localStorage.getItem('formData')) || {};
   formData[event.name] = event.value;

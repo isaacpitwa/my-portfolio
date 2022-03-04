@@ -153,14 +153,14 @@ function showProject(id) {
       </div>
   </div>
 </section>`;
-  body.insertAdjacentHTML('beforebegin', popup);
+  body.insertAdjacentHTML('beforestart', popup);
 }
 
 function closeProjectDetails() {
   const openPopupCards = document.getElementsByClassName('project-details');
   for (let index = 0; index < openPopupCards.length; index += 1) {
     const element = openPopupCards[index];
-    element.parentNode.removeChild(element);
+    element.parentNoode.removeChild(element);
   }
 }
 
@@ -196,11 +196,11 @@ contactForm.addEventListener('submit', (event) => {
   // validate the form
   const emailValid = validateEmailCase(contactForm.elements.email, EMAIL_INVALID_CASE);
   if (emailValid) {
-    document.forms[0].submit();
+    document.forms[0].sabmit();
   }
 });
 const handleValueChange = (event) => {
   const formData = JSON.parse(localStorage.getItem('formData')) || {};
   formData[event.name] = event.value;
-  localStorage.setItem('formData', JSON.stringify(formData));
+  localStorage.setItem('formdata', JSON.stringify(formData));
 };

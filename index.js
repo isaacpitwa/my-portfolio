@@ -160,7 +160,7 @@ function closeProjectDetails() {
   const openPopupCards = document.getElementsByClassName('project-details');
   for (let index = 0; index < openPopupCards.length; index += 1) {
     const element = openPopupCards[index];
-    element.parentNoode.removeChild(element);
+    element.parentNode.removeChild(element);
   }
 }
 

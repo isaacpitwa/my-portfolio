@@ -196,7 +196,7 @@ contactForm.addEventListener('submit', (event) => {
   // validate the form
   const emailValid = validateEmailCase(contactForm.elements.email, EMAIL_INVALID_CASE);
   if (emailValid) {
-    document.forms[0].sabmit();
+    document.forms[0].submit();
   }
 });
 const handleValueChange = (event) => {

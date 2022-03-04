@@ -153,7 +153,7 @@ function showProject(id) {
       </div>
   </div>
 </section>`;
-  body.insertAdjacentHTML('beforestart', popup);
+  body.insertAdjacentHTML('beforebegin', popup);
 }
 
 function closeProjectDetails() {

@@ -183,7 +183,7 @@ function showSuccess(input) {
 
 function validateEmailCase(input, invalidMsg) {
   const email = input.value.trim();
-  if (email !== email.toLowerCase()) {
+  if (email === email.toLowerCase()) {
     return showError(input, invalidMsg);
   }
   return true;

@@ -183,7 +183,7 @@ function showSuccess(input) {
 
 function validateEmailCase(input, invalidMsg) {
   const email = input.value.trim();
-  if (email === email.toLowerCase()) {
+  if (email !== email.toLowerCase()) {
     return showError(input, invalidMsg);
   }
   return true;
@@ -202,5 +202,5 @@ contactForm.addEventListener('submit', (event) => {
 const handleValueChange = (event) => {
   const formData = JSON.parse(localStorage.getItem('formData')) || {};
   formData[event.name] = event.value;
-  localStorage.setItem('formdata', JSON.stringify(formData));
+  localStorage.setItem('formData', JSON.stringify(formData));
 };
